@@ -380,28 +380,62 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .container {
+    padding: 24px 16px 60px 16px;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  .nav-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0 16px;
+  }
   .publication-item {
     flex-direction: column;
     gap: 1rem;
   }
   .publication-img {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
+    min-width: 0;
   }
   .person-card.pi {
     flex-direction: column;
     text-align: center;
     align-items: center;
     padding: 0;
+    gap: 1.5rem;
   }
   .person-card.pi .person-photo {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
-  .nav-container {
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+  .people-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 2rem 1rem;
+  }
+  .person-photo {
+    width: 140px;
+    height: 140px;
+  }
+  .carousel-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+  .carousel-btn.prev {
+    left: 8px;
+  }
+  .carousel-btn.next {
+    right: 8px;
+  }
+  .research-filters {
+    display: block;
+    margin-left: 0 !important;
+    margin-top: 0.5rem;
+    line-height: 1.5;
   }
 }
